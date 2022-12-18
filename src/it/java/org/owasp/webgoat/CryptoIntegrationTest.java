@@ -37,7 +37,7 @@ public class CryptoIntegrationTest extends IntegrationTest {
 		}
 
 		try {
-			checkAssignmentSigning();
+			checkAssignmentSigning() ;
 		} catch (Exception e) {
 			e.printStackTrace();
 			fail();
@@ -54,7 +54,7 @@ public class CryptoIntegrationTest extends IntegrationTest {
 		String basicEncoding = RestAssured.given().when().relaxedHTTPSValidation()
 				.cookie("JSESSIONID", getWebGoatCookie()).get(url("/crypto/encoding/basic")).then().extract()
 				.asString();
-		basicEncoding = basicEncoding.substring("Authorization: Basic ".length());
+		basicEncoding = basicEncoding.substring("Authorization: Basic ".length()) ;
 		String decodedString = new String(Base64.getDecoder().decode(basicEncoding.getBytes()));
 		String answer_user = decodedString.split(":")[0];
 		String answer_pwd = decodedString.split(":")[1];
