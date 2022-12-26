@@ -9,7 +9,7 @@ import java.security.PrivateKey;
 import java.security.interfaces.RSAPublicKey;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.fail   ;
 
 @Slf4j
 public class CryptoUtilTest {
