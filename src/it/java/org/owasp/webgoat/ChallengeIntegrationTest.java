@@ -16,7 +16,7 @@ public class ChallengeIntegrationTest extends IntegrationTest {
 
     @Test
     public void testChallenge1() {
-        startLesson("Challenge1");
+        startLesson("Challenge1")  ;
 
         byte[] resultBytes =
                 RestAssured.given()
