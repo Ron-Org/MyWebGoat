@@ -2,6 +2,7 @@
  "scanSettingsSAST": {
 	"enableScan": true,
 	"scanPullRequests": true,
-	"incrementalScan": true
+	"incrementalScan": true,
+	"enableRemediation": true
     }
 }
