@@ -25,7 +25,7 @@ public class CryptoUtilTest {
 			log.debug("public exponent {}", rsaPubKey.getPublicExponent());
 			assertTrue(CryptoUtil.verifyAssignment(modulus, signature, keyPair.getPublic()));
 		} catch (Exception e) {
-			log.error("signing failed", e);;
+			log.error("signing failed", e); 
 			fail();
 		}
 	}
